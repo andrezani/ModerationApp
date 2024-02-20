@@ -1,0 +1,2 @@
+class ModeratedModel < ApplicationRecord
+end
