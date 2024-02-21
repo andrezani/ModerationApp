@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag 'moderated_models' %>
+</head>
+<body>
+  <h3>Moderated Model Details</h3>
+
+  <div>
+    <p><strong>Content:</strong> <%= @moderated_model.content %></p>
+    <p><strong>Safe:</strong> <%= @moderated_model.is_accepted ? "Yes" : "No" %></p>
+    <p><%= link_to "Test Another", new_moderated_model_path %></p>
+  </div>
+</body>
+</html>

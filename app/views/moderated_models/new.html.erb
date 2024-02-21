@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag 'moderated_models' %>
+</head>
+<body>
+  <h3>Content Moderation Form</h3>
+    <div>
+      <%= form_with(model: @moderated_model, url: moderated_models_path, method: :post) do |form| %>
+        <%= form.label :content %>
+        <%= form.text_area :content, placeholder: 'Your content..', required: true %>
+        <%= form.submit 'Test' %>
+      <% end %>
+    </div>  
+</body>
+</html>
